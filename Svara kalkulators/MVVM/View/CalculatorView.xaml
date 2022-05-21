@@ -3,16 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Svara_kalkulators.MVVM.View"
+             xmlns:local="clr-namespace:Svara_kalkulators.MVVM.View" 
+             xmlns:viewModel="clr-namespace:Svara_kalkulators.MVVM.ViewModel"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-	<UserControl.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</UserControl.Resources>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
 
     <StackPanel>
         <StackPanel Orientation="Vertical">
@@ -48,6 +49,7 @@
                                Margin="20,1,0,0"/>
                     </StackPanel>
                 </Grid>
+                
             </Border>
         </StackPanel>
 
@@ -68,7 +70,7 @@
                                        RadiusY="10"
                                        Rect="0,0,680,340"/>
                 </Border.Clip>
-                
+
                 <Grid>
                     <StackPanel>
                         <StackPanel>
@@ -85,7 +87,7 @@
                                 </Grid.RowDefinitions>
 
                                 <Button x:Name="PlusBtn"
-                                        Background="{Binding}"
+                                        Background="Transparent"
                                         BorderThickness="0"
                                         Grid.Column="0"
                                         Grid.Row="1" 
@@ -96,7 +98,7 @@
                                 </Button>
 
                                 <Button x:Name="MinusBtn"
-                                        Background="{Binding}"
+                                        Background="Transparent"
                                         BorderThickness="0"
                                         Grid.Column="2"
                                         Grid.Row="1"
@@ -107,12 +109,12 @@
                                 </Button>
 
                                 <Grid>
-                                    
+
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    
+
                                     <TextBlock Margin="15,10,0,5"
                                        Foreground="White" 
                                        FontSize="20"
@@ -123,27 +125,30 @@
                                                Foreground="White" 
                                                FontSize="20"/>
                                 </Grid>
-                               
+
                             </Grid>
-                            
+
                             <StackPanel>
                                 <TextBox Width="320"
                                     Height="60"
                                     Margin="0,5,0,0"
+                                    x:Name="Enter"
+                                    PreviewTextInput="PreviewTextInput"
                                     Style="{StaticResource TextBox}"/>
                                 <Button Width="120"
                                         Height="30"
                                         Margin="0,5,0,0"
-                                        Content="Calculate"/>
+                                        Click="CalculateBtn_Click">Calculate</Button>
+
                             </StackPanel>
 
                             <Grid>
-                                
+
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="*"/>
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
-                                
+
                                 <StackPanel Orientation="Vertical">
                                     <TextBlock Text="Summary Weight"
                                            HorizontalAlignment="Center"                                            
@@ -157,10 +162,11 @@
                                     Width="250"
                                     Height="30"
                                     Grid.Row="1"
-                                    Margin="0,5,0,5"
-                                    Style="{StaticResource TextBox}">
-                                      
-                                    </TextBox>
+                                    Background="Transparent"
+                                    Margin="0,5,0,5" 
+                                    Focusable="False" 
+                                    IsEnabled="False"
+                                    x:Name="Summary"/>
 
                                     <Button Width="120"
                                             Height="30"
@@ -175,6 +181,5 @@
 
             </Border>
         </StackPanel>
-        
     </StackPanel>
 </UserControl>

@@ -10,14 +10,18 @@
                             Width="320" Height="60">
                         <Grid>
                             <Rectangle StrokeThickness="1"/>
+                            
                             <TextBox Margin="1"
                                      Text="{TemplateBinding Text}"
                                      BorderThickness="0"
                                      Background="Transparent"
                                      VerticalContentAlignment="Center"
+                                     HorizontalContentAlignment="Center"
                                      Padding="5"
-                                     Foreground="#CFCFCF"
-                                     x:Name="Enter"/>
+                                     FontSize="14"
+                                     Foreground="White"
+                                     x:Name="Enter"
+                                     MaxLength="12"/>
                             
                             <TextBlock IsHitTestVisible="False"
                                        Text="Enter barcode"
@@ -27,16 +31,16 @@
                                        Foreground="DarkGray"
                                        Grid.Column="1">
                                 
-                                <TextBlock.Style>
-                                    <Style TargetType="{x:Type TextBlock}">
-                                        <Style.Triggers>
-                                            <DataTrigger Binding="{Binding Text, ElementName=Enter}" Value="">
-                                                <Setter Property="Visibility" Value="Visible"/>
-                                            </DataTrigger>
-                                        </Style.Triggers>
-                                        <Setter Property="Visibility" Value="Hidden"/>
-                                    </Style>
-                                </TextBlock.Style>
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text, ElementName=Enter}" Value="">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                    <Setter Property="Visibility" Value="Hidden"/>
+                                </Style>
+                            </TextBlock.Style>
                                     
                             </TextBlock>
                         </Grid>
