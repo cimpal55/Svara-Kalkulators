@@ -10,11 +10,12 @@ namespace Svara_kalkulators.Core
 {
     class Observable : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;   
-
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void NotifyPropertyChanged(string propertyName)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
+

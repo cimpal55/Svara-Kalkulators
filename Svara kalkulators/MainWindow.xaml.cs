@@ -24,30 +24,11 @@ namespace Svara_kalkulators
         {
             InitializeComponent();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        
+        private void MainWindow_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-
-        }
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RadioButton_Checked_3(object sender, RoutedEventArgs e)
-        {
-
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
         }
     }
 }

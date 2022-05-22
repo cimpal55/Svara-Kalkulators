@@ -15,11 +15,9 @@ C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Deb
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.pdb
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Theme\MenuButton.baml
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\App.baml
-C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Theme\TextBox.baml
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MVVM\View\CalculatorView.g.cs
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MVVM\View\CalculatorView.baml
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MVVM\View\HomeView.g.cs
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MVVM\View\HomeView.baml
-C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Theme\SummText.baml
 C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Theme\CalculatorButton.baml

@@ -22,7 +22,7 @@ namespace Svara_kalkulators.MVVM.ViewModel
             set
             {
                 _currentView = value;
-                OnPropertyChanged();
+                NotifyPropertyChanged("CurrentView");
             }
         }
         public MainViewModel()

@@ -3,14 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using Svara_kalkulators.Core;
 
 namespace Svara_kalkulators.MVVM.ViewModel
 {
-    class CalculatorViewModel
+    class CalculatorViewModel : Observable
     {
-        public CalculatorViewModel()
+        private string _myText;
+        public string MyText
         {
-
+            get { return _myText; }
+            set
+            {
+                _myText = value;
+                NotifyPropertyChanged("MyText");
+            }
         }
+
     }
 }
+

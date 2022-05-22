@@ -10,7 +10,8 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True"
+        MouseDown="MainWindow_OnMouseDown">
 
     <Window.DataContext>
         <viewModel:MainViewModel/>
@@ -42,14 +43,14 @@
                              FontSize="19"
                              Style="{StaticResource MenuButton}" 
                              IsChecked="True"
-                             Command="{Binding HomeViewCommand}" Checked="RadioButton_Checked_2"/>
+                             Command="{Binding HomeViewCommand}"/>
 
                 <RadioButton Content="Calculator"
                              Height="50"
                              Foreground="White"
                              FontSize="19"
                              Style="{StaticResource MenuButton}"
-                             Command="{Binding CalculatorViewCommand}" Checked="RadioButton_Checked_3"/>
+                             Command="{Binding CalculatorViewCommand}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"
