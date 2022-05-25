@@ -17,7 +17,7 @@
         <viewModel:MainViewModel/>
     </Window.DataContext>
     
-    <Border Background="#272537" CornerRadius="15">
+    <Border x:Name="Background" Background="#272537" CornerRadius="15">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
@@ -37,13 +37,6 @@
                        FontSize="22"/>
 
             <StackPanel Grid.Row="1">
-                <RadioButton Content="Home"
-                             Height="50"
-                             Foreground="White"
-                             FontSize="19"
-                             Style="{StaticResource MenuButton}" 
-                             IsChecked="True"
-                             Command="{Binding HomeViewCommand}"/>
 
                 <RadioButton Content="Calculator"
                              Height="50"

@@ -104,6 +104,11 @@ namespace Svara_kalkulators.MVVM.View
                     MessageBox.Show("Select a mode.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
+
+            if (Summ < 0)
+            {
+                Summ = 0;
+            }
             Summary.Text = Convert.ToString(Summ);
         }
 
