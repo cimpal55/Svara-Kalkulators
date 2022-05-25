@@ -108,6 +108,7 @@ namespace Svara_kalkulators.MVVM.View
             if (Summ < 0)
             {
                 Summ = 0;
+                MessageBox.Show("Weight cannot be less than zero", "Barcode error", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             Summary.Text = Convert.ToString(Summ);
         }
