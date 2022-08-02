@@ -1,25 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using Svara_kalkulators.Core;
+﻿using Svara_kalkulators.Core;
+using Svara_kalkulators.MVVM.Model;
 
 namespace Svara_kalkulators.MVVM.ViewModel
 {
-    class CalculatorViewModel : Observable
+    class CalculatorViewModel : ViewModelBase
     {
-        private string _myText;
-        public string MyText
+        private readonly Calculator _calculator;
+        public CalculatorViewModel()
         {
-            get { return _myText; }
-            set
-            {
-                _myText = value;
-                NotifyPropertyChanged("MyText");
+
+        }
+        public int Input
+        {
+            get => _calculator.Input;
+            set 
+            {  
+                _calculator.Input = value;
+                RaisePropertyChanged();
+
             }
         }
+
+        public float Result 
+        { 
+            get => _calculator.Result; 
+            set
+            {
+                _calculator.Result = value;
+                RaisePropertyChanged();
+            }
+        }
+
+
+        public DelegateCommand PlusMode { get; }
+        public DelegateCommand MinusMode { get; }
+        public DelegateCommand Calculate { get; }
+
 
     }
 }

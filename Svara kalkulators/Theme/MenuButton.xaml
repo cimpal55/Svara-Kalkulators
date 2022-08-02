@@ -3,6 +3,7 @@
     <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
            TargetType="{x:Type RadioButton}"
            x:Key="MenuButton">
+
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
@@ -13,7 +14,7 @@
 
                             <TextBlock Text="{TemplateBinding Content}"
                                        VerticalAlignment="Center"
-                                       HorizontalAlignment="Left"
+                                       HorizontalAlignment="Left" 
                                        Margin="40,0,0,0"/>
 
                         </Grid>

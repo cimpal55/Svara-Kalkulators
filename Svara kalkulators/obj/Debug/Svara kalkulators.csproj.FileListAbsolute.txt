@@ -44,3 +44,15 @@ C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Deb
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.CoreCompileInputs.cache
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.exe
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.pdb
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.SuggestedBindingRedirects.cache
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.CopyComplete

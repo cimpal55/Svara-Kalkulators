@@ -100,7 +100,7 @@
                                 <Button x:Name="MinusBtn"
                                         Background="Transparent"
                                         BorderThickness="0"
-                                        Grid.Column="2"
+                                        Grid.Column="1"
                                         Grid.Row="1"
                                         Click="ModesBtn_Click">
                                     <Image Source="/Svara kalkulators;component/Images/minus.png" 
@@ -148,7 +148,8 @@
                                              Padding="5"
                                              FontSize="14"
                                              Foreground="White"
-                                             MaxLength="12"/>
+                                             MaxLength="12"
+                                             Text="{Binding Input, Mode=TwoWay}"/>
                                 </Border>
 
                                 <Button Width="120"

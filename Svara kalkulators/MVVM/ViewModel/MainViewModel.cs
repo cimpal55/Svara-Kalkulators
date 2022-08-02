@@ -1,39 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Svara_kalkulators.Core;
+﻿using Svara_kalkulators.Core;
 
 namespace Svara_kalkulators.MVVM.ViewModel
 {
-    class MainViewModel : Observable
+    class MainViewModel : ViewModelBase
     {
-        public RelayCommand HomeViewCommand { get; set; }
-        public RelayCommand CalculatorViewCommand { get; set; }
-        public CalculatorViewModel CalcVm { get; set; }
-        public HomeViewModel HomeVm { get; set; }
-
-        private object _currentView;
-
-        public object CurrentView
+        private ViewModelBase _selectedViewModel;
+        public MainViewModel(CalculatorViewModel calculatorViewModel,
+            HomeViewModel homeViewModel)
         {
-            get { return _currentView; }
+            CalcVm = calculatorViewModel;
+            HomeVm = homeViewModel;
+            SelectedViewModel = CalcVm;
+            SelectViewModelCommand = new DelegateCommand(SelectViewModel);
+        }
+        public ViewModelBase SelectedViewModel
+        {
+            get => _selectedViewModel;
             set
             {
-                _currentView = value;
-                NotifyPropertyChanged("CurrentView");
+                _selectedViewModel = value;
+                RaisePropertyChanged();
             }
         }
-        public MainViewModel()
+        public CalculatorViewModel CalcVm { get; }
+        public HomeViewModel HomeVm { get; }
+        public DelegateCommand SelectViewModelCommand { get; }
+
+        private void SelectViewModel(object parameter)
         {
-            CalcVm = new CalculatorViewModel();
-            HomeVm = new HomeViewModel();
-            CurrentView = HomeVm;
-
-            HomeViewCommand = new RelayCommand(o => { CurrentView = HomeVm; });
-            CalculatorViewCommand = new RelayCommand(o => { CurrentView = CalcVm; });
+            SelectedViewModel = parameter as ViewModelBase;
         }
-
     }
 }
