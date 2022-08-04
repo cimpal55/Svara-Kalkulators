@@ -1,42 +1,49 @@
 ﻿using Svara_kalkulators.Core;
 using Svara_kalkulators.MVVM.Model;
+using System;
 
 namespace Svara_kalkulators.MVVM.ViewModel
 {
-    class CalculatorViewModel : ViewModelBase
+    class CalculatorViewModel : ValidationViewModelBase
     {
-        private readonly Calculator _calculator;
+        private Mode _mode;
         public CalculatorViewModel()
         {
-
+            ModeSwitchCommand = new DelegateCommand(ModeSwitch);
+            CalculateCommand = new DelegateCommand(Calculate);
         }
-        public int Input
+        public Mode Mode
         {
-            get => _calculator.Input;
+            get => _mode;
             set 
-            {  
-                _calculator.Input = value;
+            { 
+                _mode = value;
                 RaisePropertyChanged();
-
             }
         }
 
-        public float Result 
-        { 
-            get => _calculator.Result; 
-            set
+        public DelegateCommand ModeSwitchCommand { get; }
+        public DelegateCommand CalculateCommand { get; }
+
+        private void ModeSwitch(object? parameter)
+        {
+            string value = Convert.ToString(parameter);
+            if ((string)parameter == "Plus")
             {
-                _calculator.Result = value;
-                RaisePropertyChanged();
+
             }
         }
+        private void Calculate(object? parameter)
+        {
+            throw new NotImplementedException();
+        }
 
+    }
 
-        public DelegateCommand PlusMode { get; }
-        public DelegateCommand MinusMode { get; }
-        public DelegateCommand Calculate { get; }
-
-
+    public enum Mode
+    {
+        Plus,
+        Minus
     }
 }
 

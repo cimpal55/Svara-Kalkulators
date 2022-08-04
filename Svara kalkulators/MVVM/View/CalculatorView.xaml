@@ -7,13 +7,6 @@
              xmlns:viewModel="clr-namespace:Svara_kalkulators.MVVM.ViewModel"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </UserControl.Resources>
 
     <StackPanel>
         <StackPanel Orientation="Vertical">
@@ -86,23 +79,23 @@
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
 
-                                <Button x:Name="PlusBtn"
-                                        Background="Transparent"
+                                <Button Background="Transparent"
                                         BorderThickness="0"
                                         Grid.Column="0"
                                         Grid.Row="1" 
-                                        Click="ModesBtn_Click">
+                                        Command="{Binding ModeSwitchCommand}"
+                                        CommandParameter="Plus">
                                     <Image Source="/Svara kalkulators;component/Images/plus.png" 
                                            Width="40" 
                                            Height="40"/>
                                 </Button>
 
-                                <Button x:Name="MinusBtn"
-                                        Background="Transparent"
+                                <Button Background="Transparent"
                                         BorderThickness="0"
                                         Grid.Column="1"
                                         Grid.Row="1"
-                                        Click="ModesBtn_Click">
+                                        Command="{Binding ModeSwitchCommand}"
+                                        CommandParameter="Minus">
                                     <Image Source="/Svara kalkulators;component/Images/minus.png" 
                                            Width="40" 
                                            Height="40"/>
@@ -149,7 +142,8 @@
                                              FontSize="14"
                                              Foreground="White"
                                              MaxLength="12"
-                                             Text="{Binding Input, Mode=TwoWay}"/>
+                                             Text="{Binding Input, Mode=TwoWay,
+                                                    UpdateSourceTrigger=PropertyChanged}"/>
                                 </Border>
 
                                 <Button Width="120"

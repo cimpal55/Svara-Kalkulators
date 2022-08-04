@@ -8,9 +8,9 @@ namespace Svara_kalkulators.MVVM.ViewModel
         public MainViewModel(CalculatorViewModel calculatorViewModel,
             HomeViewModel homeViewModel)
         {
-            CalcVm = calculatorViewModel;
-            HomeVm = homeViewModel;
-            SelectedViewModel = CalcVm;
+            CalculatorViewModel = calculatorViewModel;
+            HomeViewModel = homeViewModel;
+            SelectedViewModel = CalculatorViewModel;
             SelectViewModelCommand = new DelegateCommand(SelectViewModel);
         }
         public ViewModelBase SelectedViewModel
@@ -22,11 +22,11 @@ namespace Svara_kalkulators.MVVM.ViewModel
                 RaisePropertyChanged();
             }
         }
-        public CalculatorViewModel CalcVm { get; }
-        public HomeViewModel HomeVm { get; }
+        public CalculatorViewModel CalculatorViewModel { get; }
+        public HomeViewModel HomeViewModel { get; }
         public DelegateCommand SelectViewModelCommand { get; }
 
-        private void SelectViewModel(object parameter)
+        private void SelectViewModel(object? parameter)
         {
             SelectedViewModel = parameter as ViewModelBase;
         }

@@ -1,0 +1,58 @@
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\bin\Debug\Svara kalkulators.exe.config
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\bin\Debug\Svara kalkulators.exe
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\bin\Debug\Svara kalkulators.pdb
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.AssemblyReference.cache
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MainWindow.g.cs
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\App.g.cs
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators_MarkupCompile.cache
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators_MarkupCompile.lref
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MainWindow.baml
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.g.resources
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara_kalkulators.Properties.Resources.resources
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.GenerateResource.cache
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.CoreCompileInputs.cache
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.exe
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.pdb
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Theme\MenuButton.baml
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\App.baml
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MVVM\View\CalculatorView.g.cs
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MVVM\View\CalculatorView.baml
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MVVM\View\HomeView.g.cs
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\MVVM\View\HomeView.baml
+C:\Users\dungeon master\source\repos\Svara kalkulators\Svara kalkulators\obj\Debug\Theme\CalculatorButton.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Svara kalkulators.exe.config
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Svara kalkulators.exe
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Svara kalkulators.pdb
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.AssemblyReference.cache
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Theme\CalculatorButton.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Theme\MenuButton.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\MainWindow.g.cs
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\MVVM\View\CalculatorView.g.cs
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\MVVM\View\HomeView.g.cs
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\App.g.cs
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators_MarkupCompile.cache
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators_MarkupCompile.lref
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\App.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\MainWindow.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\MVVM\View\CalculatorView.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\MVVM\View\HomeView.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.g.resources
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara_kalkulators.Properties.Resources.resources
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.GenerateResource.cache
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.CoreCompileInputs.cache
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.exe
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.pdb
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.SuggestedBindingRedirects.cache
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\Svara kalkulators.csproj.CopyComplete

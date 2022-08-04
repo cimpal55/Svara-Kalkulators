@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Svara_kalkulators"
-        xmlns:viewModel="clr-namespace:Svara_kalkulators.MVVM.ViewModel"
+        xmlns:viewModel="clr-namespace:Svara_kalkulators.MVVM.ViewModel" 
+        xmlns:view="clr-namespace:Svara_kalkulators.MVVM.View"
         mc:Ignorable="d"
         Height="600" Width="920"
         WindowStyle="None"
@@ -12,6 +13,15 @@
         Background="Transparent"
         AllowsTransparency="True"
         MouseDown="MainWindow_OnMouseDown">
+
+<Window.Resources>
+    <DataTemplate DataType="{x:Type viewModel:CalculatorViewModel}">
+        <view:CalculatorView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+        <view:HomeView/>
+    </DataTemplate>
+</Window.Resources>
 
     <Border Background="#272537" CornerRadius="15">
         <Grid>
@@ -39,14 +49,14 @@
                              Foreground="White"
                              FontSize="19"
                              Style="{StaticResource MenuButton}"
-                             Command="{Binding CalculatorViewCommand}"
-                             IsChecked="True"/>
+                             Command="{Binding SelectViewModelCommand}"
+                             CommandParameter="{Binding CalculatorViewModel}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
                             Margin="20"
-                            Content="{Binding CurrentView}">
+                            Content="{Binding SelectedViewModel}">
             </ContentControl>
             
         </Grid>
