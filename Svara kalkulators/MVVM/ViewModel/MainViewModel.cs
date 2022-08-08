@@ -10,7 +10,7 @@ namespace Svara_kalkulators.MVVM.ViewModel
         {
             CalculatorViewModel = calculatorViewModel;
             HomeViewModel = homeViewModel;
-            SelectedViewModel = CalculatorViewModel;
+            SelectedViewModel = HomeViewModel;
             SelectViewModelCommand = new DelegateCommand(SelectViewModel);
         }
         public ViewModelBase SelectedViewModel

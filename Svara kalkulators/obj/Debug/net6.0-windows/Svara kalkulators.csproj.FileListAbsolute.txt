@@ -87,7 +87,6 @@ C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Deb
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Speech.dll
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Svara kalkulators.csproj.AssemblyReference.cache
-C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Theme\CalculatorButton.baml
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Theme\MenuButton.baml
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\MVVM\View\CalculatorView.g.cs
@@ -111,3 +110,5 @@ C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Deb
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Svara kalkulators.pdb
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Svara kalkulators.genruntimeconfig.cache
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\ref\Svara kalkulators.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Dapper.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Theme\BarcodeInput.baml

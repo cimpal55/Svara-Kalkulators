@@ -27,19 +27,6 @@ namespace Svara_kalkulators.MVVM.View
         {
             InitializeComponent();
         }
-        private void ModesBtn_Click(object sender, RoutedEventArgs e)
-        {
-            if (sender.Equals(PlusBtn))
-            {
-                Text_Mode.Foreground = Brushes.PaleGreen; ;
-                Text_Mode.Text = "Plus";
-            }
-            else if (sender.Equals(MinusBtn))
-            {
-                Text_Mode.Foreground = Brushes.PaleVioletRed;
-                Text_Mode.Text = "Minus";
-            }
-        }
         private new void PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9]+");
@@ -47,76 +34,16 @@ namespace Svara_kalkulators.MVVM.View
         }
 
         float Summ = 0;
-        private void CalculateBtn_Click(object sender, RoutedEventArgs e)
-        {
-            if (Enter.Text.Length < 12)
-            {
-                MessageBox.Show("Barcode is incorrect. It should consist of 12 numbers.", "Barcode error", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            else
-            {
-                string Weight = Enter.Text.Substring(8);
-
-                string FirstDigits = Enter.Text.Substring(0, 2);
-
-                if (Text_Mode.Text == "Plus")
-                {
-                    if (FirstDigits == "25")
-                    {
-                        Summ += float.Parse(Weight) / 10;
-
-                    }
-                    else if (FirstDigits == "24")
-                    {
-                        Summ += float.Parse(Weight) / 100;
-                    }
-                    else if (FirstDigits == "23")
-                    {
-                        Summ += float.Parse(Weight) / 1000;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Barcode should begin from 25, 24 or 23. Try one more time.", "Barcode error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    }
-                }
-
-                else if (Text_Mode.Text == "Minus")
-                {
-                    if (FirstDigits == "25")
-                    {
-                        Summ -= float.Parse(Weight) / 10;
-                    }
-                    else if (FirstDigits == "24")
-                    {
-                        Summ -= float.Parse(Weight) / 100;
-                    }
-                    else if (FirstDigits == "23")
-                    {
-                        Summ -= float.Parse(Weight) / 1000;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Barcode should begin from 25, 24 or 23. Try one more time.", "Barcode error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Select a mode.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
-            }
-
-            if (Summ < 0)
-            {
-                Summ = 0;
-                MessageBox.Show("Weight cannot be less than zero", "Barcode error", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-            Summary.Text = Convert.ToString(Summ);
-        }
 
         private void ResetBtn_Click(object sender, RoutedEventArgs e)
         {
             Summ = 0;
             Summary.Text = Convert.ToString(Summ);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

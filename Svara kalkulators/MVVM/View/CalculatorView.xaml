@@ -5,9 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Svara_kalkulators.MVVM.View" 
              xmlns:viewModel="clr-namespace:Svara_kalkulators.MVVM.ViewModel"
+             xmlns:converter="clr-namespace:Svara_kalkulators.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-
+    <UserControl.Resources>
+        <converter:InverseBoolConverter x:Key="InverseBoolConv"/>
+    </UserControl.Resources>
+    
     <StackPanel>
         <StackPanel Orientation="Vertical">
 
@@ -84,7 +88,7 @@
                                         Grid.Column="0"
                                         Grid.Row="1" 
                                         Command="{Binding ModeSwitchCommand}"
-                                        CommandParameter="Plus">
+                                        CommandParameter="{x:Static viewModel:Mode.Plus}">
                                     <Image Source="/Svara kalkulators;component/Images/plus.png" 
                                            Width="40" 
                                            Height="40"/>
@@ -95,7 +99,7 @@
                                         Grid.Column="1"
                                         Grid.Row="1"
                                         Command="{Binding ModeSwitchCommand}"
-                                        CommandParameter="Minus">
+                                        CommandParameter="{x:Static viewModel:Mode.Minus}" Click="Button_Click">
                                     <Image Source="/Svara kalkulators;component/Images/minus.png" 
                                            Width="40" 
                                            Height="40"/>
@@ -112,9 +116,9 @@
                                                Foreground="White" 
                                                FontSize="20"
                                                FontWeight="SemiBold"
-                                               Text="Current mode is:" />
+                                               Text="Current mode is:"/>
 
-                                    <TextBlock x:Name="Text_Mode"
+                                    <TextBlock Text="{Binding Mode}"
                                                Grid.Column="2"
                                                Margin="0,10,0,5"
                                                Foreground="White" 
@@ -130,27 +134,19 @@
                                         Width="320" 
                                         Height="60">
 
-                                    <TextBox Width="320"
-                                             Height="60"
-                                             x:Name="Enter"
+                                    <TextBox Style="{StaticResource BarcodeInput}"
                                              PreviewTextInput="PreviewTextInput"
-                                             BorderThickness="0"
-                                             Background="Transparent"
-                                             VerticalContentAlignment="Center"
-                                             HorizontalContentAlignment="Center"
-                                             Padding="5"
-                                             FontSize="14"
-                                             Foreground="White"
-                                             MaxLength="12"
                                              Text="{Binding Input, Mode=TwoWay,
-                                                    UpdateSourceTrigger=PropertyChanged}"/>
+                                                    UpdateSourceTrigger=PropertyChanged,
+                                                    NotifyOnValidationError=True}"/>
                                 </Border>
 
                                 <Button Width="120"
                                         Height="30"
                                         Margin="0,5,0,0"
-                                        Click="CalculateBtn_Click"
-                                        Content="Calculate"/>
+                                        Content="Calculate"
+                                        IsEnabledChanged="{Binding HasErrors,
+                                                           Converter={StaticResource InverseBoolConv}}"/>
 
                             </StackPanel>
 

@@ -8,7 +8,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/MenuButton.xaml"/>
-                <ResourceDictionary Source="Theme/CalculatorButton.xaml"/>
+                <ResourceDictionary Source="Theme/BarcodeInput.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type viewModel:CalculatorViewModel}">
@@ -18,7 +18,6 @@
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView/>
             </DataTemplate>
-
         </ResourceDictionary>
-    </Application.Resources>
+    </Application.Resources>    
 </Application>

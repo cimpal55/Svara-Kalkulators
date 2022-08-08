@@ -25,7 +25,7 @@ namespace Svara_kalkulators
         public MainWindow()
         {
             InitializeComponent();
-            _viewModel = new MainViewModel(new CalculatorViewModel(), new HomeViewModel());
+            _viewModel = new MainViewModel(new CalculatorViewModel(new MVVM.Model.Calculator()), new HomeViewModel());
             DataContext = _viewModel;
         }
 
