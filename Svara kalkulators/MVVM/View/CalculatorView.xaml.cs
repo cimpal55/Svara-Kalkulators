@@ -38,7 +38,6 @@ namespace Svara_kalkulators.MVVM.View
         private void ResetBtn_Click(object sender, RoutedEventArgs e)
         {
             Summ = 0;
-            Summary.Text = Convert.ToString(Summ);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

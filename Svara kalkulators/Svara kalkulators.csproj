@@ -57,4 +57,9 @@
     <Page Remove="Theme\SummText.xaml" />
     <Page Remove="Theme\TextBox.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <Page Update="Theme\ResultTextBox.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
 </Project>

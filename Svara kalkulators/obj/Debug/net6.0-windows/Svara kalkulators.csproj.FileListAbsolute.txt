@@ -112,3 +112,4 @@ C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Deb
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\ref\Svara kalkulators.dll
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Dapper.dll
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Theme\BarcodeInput.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Theme\ResultTextBox.baml

@@ -7,9 +7,8 @@ namespace Svara_kalkulators.MVVM.Model
         public string? Barcode { get; set; }
         public float Weight { get; set; }
         public DateTime DateTime { get; set; }
-        public string? Input{ get; set; }
-        public float Result{ get; set; }
-        public string InputFirstChars { get; set; }
+        public string? Input { get; set; }
+        public float Result { get; set; }
 
     }
 }

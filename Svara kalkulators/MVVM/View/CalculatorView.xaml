@@ -137,15 +137,16 @@
                                     <TextBox Style="{StaticResource BarcodeInput}"
                                              PreviewTextInput="PreviewTextInput"
                                              Text="{Binding Input, Mode=TwoWay,
-                                                    UpdateSourceTrigger=PropertyChanged,
-                                                    NotifyOnValidationError=True}"/>
+                                                    UpdateSourceTrigger=PropertyChanged}"/>
                                 </Border>
 
                                 <Button Width="120"
                                         Height="30"
                                         Margin="0,5,0,0"
                                         Content="Calculate"
-                                        IsEnabledChanged="{Binding HasErrors,
+                                        Command="{Binding CalculateCommand}"
+                                        CommandParameter="{Binding Input}"
+                                        IsEnabled="{Binding HasErrors,
                                                            Converter={StaticResource InverseBoolConv}}"/>
 
                             </StackPanel>
@@ -173,17 +174,9 @@
                                             Height="30">
 
                                         <TextBox IsReadOnly="True"
-                                                 x:Name="Summary"
-                                                 BorderThickness="0"
-                                                 VerticalContentAlignment="Center"
-                                                 HorizontalContentAlignment="Center"
-                                                 Padding="5"
-                                                 Grid.Row="1"
-                                                 Foreground="White"
-                                                 Background="Transparent"
-                                                 Focusable="False" 
-                                                 IsEnabled="False"
-                                                 FontSize="14"/>
+                                                 Text="{Binding Result, 
+                                                        UpdateSourceTrigger=PropertyChanged}"
+                                                 Style="{StaticResource ResultTextBox}"/>
 
                                     </Border>
 
@@ -191,7 +184,7 @@
                                                 Height="30"
                                                 Grid.Row="1"
                                                 Content="Reset" 
-                                                Click="ResetBtn_Click"/>
+                                                Command="{Binding ResetResultCommand}"/>
 
                                 </StackPanel>
                             </Grid>

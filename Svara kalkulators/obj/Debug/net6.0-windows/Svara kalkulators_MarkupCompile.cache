@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\App.xaml
-5143226983
+6-181947846
 
 17-353030418
 2212090255729
-MainWindow.xaml;MVVM\View\CalculatorView.xaml;MVVM\View\HomeView.xaml;Theme\BarcodeInput.xaml;Theme\MenuButton.xaml;
+MainWindow.xaml;MVVM\View\CalculatorView.xaml;MVVM\View\HomeView.xaml;Theme\BarcodeInput.xaml;Theme\MenuButton.xaml;Theme\ResultTextBox.xaml;
 
 False
 
