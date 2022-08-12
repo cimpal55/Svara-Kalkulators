@@ -1,6 +1,11 @@
-﻿using Svara_kalkulators.Core;
+﻿using Microsoft.Extensions.Configuration;
+using Svara_kalkulators.Core;
+using Svara_kalkulators.DbConnections;
 using Svara_kalkulators.MVVM.Model;
 using System;
+using System.Data.SqlClient;
+using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Windows.Controls;
 
@@ -8,6 +13,8 @@ namespace Svara_kalkulators.MVVM.ViewModel
 {
     class CalculatorViewModel : ValidationViewModelBase
     {
+        private static IConfigurationRoot config;
+
         private readonly Calculator _model;
 
         private Mode _mode;
@@ -86,7 +93,28 @@ namespace Svara_kalkulators.MVVM.ViewModel
         public DelegateCommand ModeSwitchCommand { get; }
         public DelegateCommand CalculateCommand { get; }
         public DelegateCommand ResetResultCommand { get; }
+        private static IResultsRepository CreateRepository()
+        {
+            return new ResultsRepository(System.Configuration.ConfigurationManager.
+ConnectionStrings["DefaultConnection"].ConnectionString);
+        }
 
+        public int DbAdd()
+        {
+            IResultsRepository repository = CreateRepository();
+            var results = new Results
+            {
+                Barcode = _model.Input,
+                Weight = float.Parse(Input.Substring(8)),
+                DateTime = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss")
+            };
+
+            repository.Add(results);
+
+            Debug.Assert(results.Id != 0);
+
+            return results.Id;
+        }
         private void ModeSwitch(object? parameter)
         {
             if (parameter != null)
@@ -96,6 +124,7 @@ namespace Svara_kalkulators.MVVM.ViewModel
         }
         private void Calculate(object? parameter)
         {
+
             Weight = float.Parse(Input.Substring(8));
 
             switch (InputFirstChars)
@@ -120,6 +149,9 @@ namespace Svara_kalkulators.MVVM.ViewModel
                     Result -= Weight / NumberToDegree;
                     break;
             }
+
+            DbAdd();
+
         }
 
         private void ResetResult(object? parameter)

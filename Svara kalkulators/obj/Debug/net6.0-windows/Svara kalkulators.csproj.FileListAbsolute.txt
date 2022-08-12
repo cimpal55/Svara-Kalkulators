@@ -113,3 +113,12 @@ C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Deb
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Dapper.dll
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Theme\BarcodeInput.baml
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\obj\Debug\net6.0-windows\Theme\ResultTextBox.baml
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators\bin\Debug\net6.0-windows\Dapper.Contrib.dll
