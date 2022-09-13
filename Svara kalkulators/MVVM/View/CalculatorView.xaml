@@ -99,7 +99,7 @@
                                         Grid.Column="1"
                                         Grid.Row="1"
                                         Command="{Binding ModeSwitchCommand}"
-                                        CommandParameter="{x:Static viewModel:Mode.Minus}" Click="Button_Click">
+                                        CommandParameter="{x:Static viewModel:Mode.Minus}">
                                     <Image Source="/Svara kalkulators;component/Images/minus.png" 
                                            Width="40" 
                                            Height="40"/>

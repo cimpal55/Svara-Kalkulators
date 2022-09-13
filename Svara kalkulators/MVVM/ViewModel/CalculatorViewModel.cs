@@ -8,13 +8,13 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Windows.Controls;
+using System.Configuration;
+using ConfigurationManager = System.Configuration.ConfigurationManager;
 
 namespace Svara_kalkulators.MVVM.ViewModel
 {
     class CalculatorViewModel : ValidationViewModelBase
     {
-        private static IConfigurationRoot config;
-
         private readonly Calculator _model;
 
         private Mode _mode;
@@ -95,20 +95,20 @@ namespace Svara_kalkulators.MVVM.ViewModel
         public DelegateCommand ResetResultCommand { get; }
         private static IResultsRepository CreateRepository()
         {
-            return new ResultsRepository(System.Configuration.ConfigurationManager.
-ConnectionStrings["DefaultConnection"].ConnectionString);
+            string connString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            return new ResultsRepository(connString);
         }
-
+        
         public int DbAdd()
         {
             IResultsRepository repository = CreateRepository();
             var results = new Results
             {
                 Barcode = _model.Input,
-                Weight = float.Parse(Input.Substring(8)),
-                DateTime = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss")
+                Weight = decimal.Parse(Input.Substring(8)),
+                DateTime = DateTime.Now
             };
-
+            
             repository.Add(results);
 
             Debug.Assert(results.Id != 0);

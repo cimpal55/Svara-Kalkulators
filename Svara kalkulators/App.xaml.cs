@@ -18,7 +18,7 @@ namespace Svara_kalkulators
         private readonly ServiceProvider _serviceProvider;
         public App()
         {
-            ServiceCollection services = new ServiceCollection();
+            ServiceCollection services = new();
             ConfigureServices(services);
             _serviceProvider = services.BuildServiceProvider();
         }

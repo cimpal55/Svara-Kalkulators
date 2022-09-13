@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31911.196
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Svara kalkulators", "Svara kalkulators\Svara kalkulators.csproj", "{A50F65A1-0588-4B5F-9D74-9413D6FC8C7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Svara kalkulators", "Svara kalkulators\Svara kalkulators.csproj", "{A50F65A1-0588-4B5F-9D74-9413D6FC8C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Svara kalkulators.Migrations", "Svara kalkulators.Migrations\Svara kalkulators.Migrations.csproj", "{94C7180B-9A3C-4045-A0BC-3F1441610BCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A50F65A1-0588-4B5F-9D74-9413D6FC8C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A50F65A1-0588-4B5F-9D74-9413D6FC8C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A50F65A1-0588-4B5F-9D74-9413D6FC8C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C7180B-9A3C-4045-A0BC-3F1441610BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C7180B-9A3C-4045-A0BC-3F1441610BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C7180B-9A3C-4045-A0BC-3F1441610BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C7180B-9A3C-4045-A0BC-3F1441610BCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

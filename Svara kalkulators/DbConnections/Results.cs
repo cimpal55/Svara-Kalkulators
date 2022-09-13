@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 namespace Svara_kalkulators.DbConnections
 {
     [Dapper.Contrib.Extensions.Table("Results")]
-    public class Results {
+    public sealed record Results {
 
         [ExplicitKey]
         public int Id { get; set; }
         public string Barcode { get; set; }
-        public float Weight { get; set; }
-        public string DateTime { get; set; }
+        public decimal Weight { get; set; }
+        public DateTime DateTime { get; set; }
     }
 }

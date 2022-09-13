@@ -32,17 +32,5 @@ namespace Svara_kalkulators.MVVM.View
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
         }
-
-        float Summ = 0;
-
-        private void ResetBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Summ = 0;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
