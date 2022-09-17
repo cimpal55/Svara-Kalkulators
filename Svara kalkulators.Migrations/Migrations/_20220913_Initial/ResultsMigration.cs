@@ -4,20 +4,21 @@ using Svara_kalkulators.Migrations.Migrations.Interfaces;
 namespace Svara_kalkulators.Migrations.Migrations._20220913_Initial
 {
     [Migration(2022091301)]
-    internal sealed class ResultsMigration : ISubMigration
+    public sealed class ResultsMigration : Migration
     {
         private const string TableName = "Results";
-        public void Up(Migration migration)
+        public override void Up()
         {
-            migration.Create.Table(TableName)
+            
+            Create.Table(TableName)
                 .WithColumn("Id").AsInt32().PrimaryKey().Identity()
                 .WithColumn("Barcode").AsString(12).NotNullable()
                 .WithColumn("Weight").AsDecimal().NotNullable()
                 .WithColumn("DateTime").AsDateTime().NotNullable();
         }
-        public void Down(Migration migration)
+        public override void Down()
         {
-            migration.Delete.Table(TableName);
+            Delete.Table(TableName);
         }
     }
 }

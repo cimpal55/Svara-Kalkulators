@@ -13,5 +13,6 @@ namespace Svara_kalkulators.DbConnections
         Results Add(Results results);
         Results Update(Results results);
         void Remove(int id);
+        void CreateDb();
     }
 }

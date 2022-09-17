@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using FluentMigrator.Runner;
 using Svara_kalkulators.Migrations.Migrations._20220913_Initial;
+using Microsoft.Data.SqlClient;
 
 var serviceProvider = CreateServices();
 

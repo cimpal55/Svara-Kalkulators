@@ -43,5 +43,13 @@ namespace Svara_kalkulators.DbConnections
         {
             throw new System.NotImplementedException();
         }
+
+        public void CreateDb()
+        {
+            var sql =
+                "CREATE DATABASE Results";
+            
+            
+        }
     }
 }

@@ -9,6 +9,7 @@
       "Svara kalkulators.Migrations/1.0.0": {
         "dependencies": {
           "FluentMigrator": "3.3.2",
+          "FluentMigrator.Console": "3.3.2",
           "FluentMigrator.Extensions.SqlServer": "3.3.2",
           "FluentMigrator.Runner": "3.3.2",
           "FluentMigrator.Runner.SqlServer": "3.3.2",
@@ -83,6 +84,7 @@
           }
         }
       },
+      "FluentMigrator.Console/3.3.2": {},
       "FluentMigrator.Extensions.Oracle/3.3.2": {
         "dependencies": {
           "FluentMigrator.Abstractions": "3.3.2"
@@ -824,6 +826,13 @@
       "sha512": "sha512-llDjPyUOHzcfmrADIZHe15dnC84k9mE5kEaR5Nyy04Mig7JdcJ2TB2pRrHCM0eLb+EsWnQMfui8KyYTwD4HKpA==",
       "path": "fluentmigrator.abstractions/3.3.2",
       "hashPath": "fluentmigrator.abstractions.3.3.2.nupkg.sha512"
+    },
+    "FluentMigrator.Console/3.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bnLYL0nNEs4CTI5ti4tkRH4b1kRddtk0mw3FEm2Pj76v6nScrfJGnZG352lf/9X4vgVQDQQE4JJOZQTwfA/xtA==",
+      "path": "fluentmigrator.console/3.3.2",
+      "hashPath": "fluentmigrator.console.3.3.2.nupkg.sha512"
     },
     "FluentMigrator.Extensions.Oracle/3.3.2": {
       "type": "package",
