@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bDOSli0073DWINj3JFXoZVVGmF5UGCFuUvCG1ElC40i2vspzIFep4yztrPdtg3TcRIfVe37vA9BpOlqxhwczaw==",
+  "dgSpecHash": "xIxu+uQ0+vBjmMsQjvsQnW99OSHLVfhvfCxYCIsgHTzqNml2mEmySu/3OksJMVSDCwJP9SdLA+u2A5hZ5He8ww==",
   "success": true,
   "projectFilePath": "C:\\Users\\dungeon master\\source\\repos\\Svara-Kalkulators\\Svara kalkulators.Migrations\\Svara kalkulators.Migrations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dungeon master\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\dungeon master\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\dungeon master\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\dungeon master\\.nuget\\packages\\fluentmigrator\\3.3.2\\fluentmigrator.3.3.2.nupkg.sha512",
     "C:\\Users\\dungeon master\\.nuget\\packages\\fluentmigrator.abstractions\\3.3.2\\fluentmigrator.abstractions.3.3.2.nupkg.sha512",
     "C:\\Users\\dungeon master\\.nuget\\packages\\fluentmigrator.console\\3.3.2\\fluentmigrator.console.3.3.2.nupkg.sha512",

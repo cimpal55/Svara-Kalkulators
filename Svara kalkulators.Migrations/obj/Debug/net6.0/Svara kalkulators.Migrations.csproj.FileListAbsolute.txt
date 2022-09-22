@@ -76,3 +76,4 @@ C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators.Migrati
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators.Migrations\obj\Debug\net6.0\Svara kalkulators.Migrations.pdb
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators.Migrations\obj\Debug\net6.0\Svara kalkulators.Migrations.genruntimeconfig.cache
 C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators.Migrations\obj\Debug\net6.0\ref\Svara kalkulators.Migrations.dll
+C:\Users\dungeon master\source\repos\Svara-Kalkulators\Svara kalkulators.Migrations\bin\Debug\net6.0\Dapper.dll
